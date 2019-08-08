@@ -9,7 +9,7 @@ module Spotlight
     def content_editor_class(page)
       page_content = page.content_type
 
-      if page_content == 'sir_trevor'
+      if page_content == 'SirTrevor'
         'js-st-instance'
       else
         "js-#{page_content.dasherize}-instance"

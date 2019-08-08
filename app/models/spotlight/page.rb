@@ -58,7 +58,7 @@ module Spotlight
     end
 
     def content_type
-      super || Spotlight::Engine.config.default_page_content_type
+      read_attribute('content_type') || Spotlight::Engine.config.default_page_content_type
     end
 
     def content=(content)

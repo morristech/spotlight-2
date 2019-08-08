@@ -238,7 +238,7 @@ module Spotlight
 
     config.exhibit_themes = ['default']
 
-    config.default_page_content_type = 'sir_trevor'
+    config.default_page_content_type = 'SirTrevor'
     config.sir_trevor_widgets = %w(
       Heading Text List Quote Iframe Video Oembed Rule UploadedItems Browse LinkToSearch
       FeaturedPages SolrDocuments SolrDocumentsCarousel SolrDocumentsEmbed
