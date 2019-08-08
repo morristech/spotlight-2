@@ -13,6 +13,7 @@
 //= require underscore
 //= require eventable
 //= require sir-trevor
+//= require editor
 //= require nestable
 //= require parameterize
 //= require spotlight/spotlight
