@@ -63,5 +63,12 @@ Spotlight.onLoad(function(){
     });
   }
 
+    var trixjsinstance = $('.js-Trix-instance').first();
+
+    if (trixjsinstance.length) {
+      $(trixjsinstance).attr('id', 'x');
+      $('<trix-editor class="trix-content" input="x"></trix-editor>').insertAfter(trixjsinstance);
+    }
+
   $('.carousel').carousel();
 });
