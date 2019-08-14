@@ -142,6 +142,7 @@ Spotlight::Engine.routes.draw do
       end
     end
     post 'solr/update' => 'solr#update'
+    get 'iiif/collection' => 'catalog#index', defaults: { q: '*:*', format: :iiif_json }
     resource :translations, only: [:edit, :update]
   end
 

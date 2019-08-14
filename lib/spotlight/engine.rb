@@ -57,6 +57,7 @@ module Spotlight
       require 'oembed'
 
       Mime::Type.register 'application/solr+json', :solr_json
+      Mime::Type.register 'application/iiif+json', :iiif_json
     end
 
     initializer 'oembed.initialize' do

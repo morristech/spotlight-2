@@ -126,7 +126,7 @@ module Spotlight
     # TODO: move this out of app/helpers/blacklight/catalog_helper_behavior.rb and into blacklight/catalog.rb
     # rubocop:disable Naming/PredicateName
     def has_search_parameters?
-      !params[:q].blank? || !params[:f].blank? || !params[:search_field].blank?
+      !params[:q].blank? || !params[:f].blank? || !params[:search_field].blank? || params[:format] == :iiif_json
     end
     # rubocop:enable Naming/PredicateName
 
